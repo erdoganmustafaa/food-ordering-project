@@ -2,10 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -14,6 +12,16 @@ a {
 * {
   box-sizing: border-box;
 }
+.btn-primary{
+  @apply text-black text-sm px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer;
+}
+.slick-dots{
+  @apply !flex
+}
+.slick-dots .slick-active div{
+  @apply bg-primary
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -24,3 +32,8 @@ a {
     background: black;
   }
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
