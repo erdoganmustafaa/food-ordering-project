@@ -14,7 +14,7 @@ function Index() {
         <div className='sm:mx-auto mx-5'>
             <Title addClass="sm:text-[40px] text-[52px]">We are Feane</Title>
             <p className='my-6'>
-            About Feane
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
             <button className='btn-primary'>Read more</button>
         </div>
