@@ -3,7 +3,7 @@
 ## Full Stack Food Ordering Project
 
 <b>Live : https://food-orderingg.vercel.app/</b><br/><br/>
-<b>Admin Paneli için sitenin sonuna -/admin </span> yazarak admin paneline erişebilirsiniz.</b><br/><br/>
+<b>Admin Paneli için sitenin sonuna - /admin </span> yazarak admin paneline erişebilirsiniz.</b><br/><br/>
 <b>Admin Paneli Giriş Bilgileri:</b><br/><br/>
 <b>Kullanıcı adı :</b>admin </br>
 <b>Şifre : </b> 123456<br/><br/><br/>
