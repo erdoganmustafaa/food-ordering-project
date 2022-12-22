@@ -65,7 +65,7 @@ const Index = ({food}) => {
             <div className='sm:mt-10 mt-20 mx-auto'>
                 <Title addClass="text-center text-6xl sm:-mt-0 -mt-10">{food?.title}</Title>
                 
-                <span className='text-red-700 text-2xl font-bold underline my-4 sm:mx-auto ml-40 inline-block '>
+                <span className='text-red-800 text-2xl font-bold underline my-4 sm:mx-auto ml-40 inline-block '>
                     $ {price}
                 </span>
                 <p className='text-[18px] my-4 w-[1000px] sm:ml-0 ml-5 '>{food?.description}</p>
