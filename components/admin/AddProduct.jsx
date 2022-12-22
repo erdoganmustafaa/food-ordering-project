@@ -101,7 +101,7 @@ const AddProduct = ({setIsProductModal}) => {
                     {
                         showDeleteImgBtn &&
                         <>
-                         <Image src={srcImg} alt='' className='w-[100px] h-[100px] mx-auto'/>
+                         <img src={srcImg} alt='' className="w-[100px] h-[100px] mx-auto"/>
                          <button className='btn-primary mt-2' onClick={(e)=>setShowDeleteImgBtn(false)}>Delete Image</button>
                     </>
                     }

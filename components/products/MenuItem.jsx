@@ -4,10 +4,10 @@ import {RiShoppingCart2Fill} from "react-icons/ri";
 import Link from 'next/link';
 const MenuItem = ({product}) => {
   return (
-    <div className='bg-secondary rounded-3xl mb-10 f'>
-        <div className='w-full bg-[#f1f2f3] h-[210px] flex justify-center items-center  rounded-bl-[46px] rounded-tl-2xl rounded-tr-2xl'>
+    <div className='bg-secondary rounded-3xl mb-10 '>
+        <div className='w-full bg-[#f1f2f3] h-[210px] flex justify-center items-center  rounded-bl-[46px] rounded-tl-2xl rounded-tr-2xl '>
         <Link href={`/product/${product._id}`} >
-            <div className='relative w-36 h-36 hover:scale-125 transition-all duration-1000 cursor-pointer'>
+            <div className='relative w-36 h-36 hover:scale-125 transition-all duration-1000 cursor-pointer '>
                 <Image src={product.img} alt='' layout='fill' className='w-full'/>
             </div>
         </Link>

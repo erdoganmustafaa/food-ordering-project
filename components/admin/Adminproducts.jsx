@@ -41,8 +41,8 @@ const Adminproducts = ({setIsProductModal}) => {
         <span className='text-[18px] ml-2 font-bold text-red-700'> Add a Product</span>
         </div>
         
-        <div className=' sm:w-full w-auto  mx-auto my-5'> 
-        <table className='text-center text-sm  cursor-pointer min-w-[1000px] mx-auto sm:ml-10 ml-0 overflow-scroll '>
+        <div className=' sm:w-full w-auto mx-auto my-20 -mt-3 max-h-[500px] overflow-auto '> 
+        <table className='text-center text-sm cursor-pointer min-w-[1000px] mx-auto sm:ml-10 ml-0 '>
                     <thead className='uppercase bg-gray-700 text-white text-xs '>
                         <tr >
                         <th scope='col' className='py-3 px-6'>IMAGE</th>

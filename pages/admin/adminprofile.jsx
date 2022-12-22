@@ -36,7 +36,7 @@ const Adminprofile = () => {
     }
    return(
     <div className='flex sm:flex-row flex-col px-10 '>
-    <div className='border sm:mx-0 mx-auto mb-24 w-80 flex-shrink-0 '>
+    <div className='border sm:mx-0 mx-auto mb-24 w-80 flex-shrink-0 max-h-[455px]'>
         <div className='relative flex flex-col items-center p-10 '>
             <Image src="/images/admin.png" width={100} height={100} alt="" className='rounded-full cursor-pointer'/>
             <span className='text-[24px] font-bold mt-2'>Admin</span>

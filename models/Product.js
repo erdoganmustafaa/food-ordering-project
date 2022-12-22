@@ -4,12 +4,12 @@ const ProductSchema = new mongoose.Schema(
     {
         title:{
             type:String,
-            maxlength:60,
+            maxlength:100,
             required:true,
         },
         description:{
             type:String,
-            maxlength:300,
+            maxlength:1000,
             required:true,
         },
         prices:{
