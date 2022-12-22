@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import Image from 'next/image'
 import OutsideClickHandler from 'react-outside-click-handler';
 import Title from '../ui/Title'
 import {GiCancel} from "react-icons/gi";
@@ -72,7 +72,7 @@ const AddProduct = ({setIsProductModal}) => {
                     setIsProductModal(false);
                     toast.success("Product successfulyy added!")
                     setProducts([...products,newProduct]);
-                    console.log(newProduct);
+                    
                   }
                   
             } catch (error) {
@@ -101,9 +101,9 @@ const AddProduct = ({setIsProductModal}) => {
                     {
                         showDeleteImgBtn &&
                         <>
-                         <img src={srcImg} alt='' className='w-[100px] h-[100px] mx-auto'/>
+                         <Image src={srcImg} alt='' className='w-[100px] h-[100px] mx-auto'/>
                          <button className='btn-primary mt-2' onClick={(e)=>setShowDeleteImgBtn(false)}>Delete Image</button>
-                         </>
+                    </>
                     }
                         
                         
@@ -140,27 +140,15 @@ const AddProduct = ({setIsProductModal}) => {
                 </div>
                 <div className='flex flex-col text-lg mt-4'>
                     <span className='mb-2 font-semibold'>Prices</span>
-                    {
-                        category === "pizza" ? 
-                        <div className='flex justify-between'>
-                        <input type="number" className='border-b-2 pl-0 outline-none text-sm w-36' placeholder='Small'
-                        onChange={(e)=>changePrice(e,0)}
-                        />
-                        <input type="number" className='border-b-2 p-1 pl-0 outline-none text-sm px-1 w-36' placeholder='Medium'
-                        onChange={(e)=>changePrice(e,1)}
-                        />
-                        <input type="number" className='border-b-2 p-1 pl-0 outline-none text-sm px-1 w-36' placeholder='Large'
-                        onChange={(e)=>changePrice(e,2)}/>
-                        <input type="number" className='border-b-2 p-1 pl-0 outline-none text-sm px-1 w-36' placeholder='X-Large'
-                        onChange={(e)=>changePrice(e,3)}/>
-                    </div>
-                    :
+                    
+                      
+                    
                     <div className='flex justify-between'>
                         <input type="number" className='border-b-2 pl-0 outline-none text-sm w-36' placeholder='Price'
                         onChange={(e)=>changePrice(e,0)}
                         />
                     </div>
-                    }
+                    
                     
 
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from '../ui/Title'
+import Link from 'next/link'
 const Footer = () => {
   return (
     <div className='bg-secondary text-white'>
@@ -36,6 +37,8 @@ const Footer = () => {
                     <a href="" className='w-8 h-8 grid place-content-center bg-white text-secondary hover:text-primary rounded-full'>
                     <i className="fab fa-linkedin"></i>
                     </a>
+                    
+                   
                     <a href="" className='w-8 h-8 grid place-content-center bg-white text-secondary hover:text-primary rounded-full'>
                     <i className="fab fa-instagram"></i>
                     </a>

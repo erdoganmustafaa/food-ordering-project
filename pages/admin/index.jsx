@@ -12,7 +12,7 @@ const AdminLogin = () => {
        try {
             const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/admin`,values);
             if(res.status===200){
-                console.log(res.data);
+                
                 actions.resetForm();
                 toast.success("Admin Login success");
                 const pushToAdminPage = ()=>{

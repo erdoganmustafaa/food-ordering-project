@@ -3,16 +3,14 @@ import Title from '../ui/Title'
 import Input from '../form/Input'
 import { useFormik } from 'formik';
 import axios from 'axios';
-
+import {toast} from "react-toastify"
 const PasswordSettings = ({user}) => {const onSubmit = async (values,actions)=>{
     try {
         const res = await axios.put(`${process.env.NEXT_PUBLIC_API_URL}/users/${user._id}`,values)
         if(res.status===200){
-            alert("basarili")
+            toast.success("Password is changed")
         }
-        else{
-            alert("basarisiz");
-        }
+        
     } catch (error) {
         console.log(error);
     }

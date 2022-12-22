@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from "next/image"
+import axios from 'axios'
 
-const Order = () => {
+const Order = ({order}) => {
   return (
     
         <div className='min-h-[calc(100vh_-_433px)] flex justify-between  flex-col '>
@@ -18,26 +19,26 @@ const Order = () => {
                     <tbody>
                         <tr className='border-b bg-secondary border-gray-700 '>
                             <td className='py-4 px-6 font-medium whitespace-nowrap hover:text-gray-400 flex items-center justify-center gap-2'>
-                                685458656..
+                                {order._id.substring(0,7)}..
                             </td>
                             <td className='py-4 px-6 font-medium whitespace-nowrap hover:text-gray-400'>
-                                <span>Mustafa Erdoğan</span>
+                                <span>{order.customer}</span>
                             </td>
                             <td className='py-4 px-6 font-medium whitespace-nowrap hover:text-gray-400'>
-                                Manisa
+                                {order.adress}
                             </td>
-                            <td className='py-4 px-6 font-medium whitespace-nowrap hover:text-gray-400'>$20</td>
+                            <td className='py-4 px-6 font-medium whitespace-nowrap hover:text-gray-400'>${order.total}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         
             <div className='flex justify-around  items-center w-full bg-primary py-10  rounded-xl mb-5 max-w-[1400px] mx-auto'>
-            <div className='flex items-center justify-center flex-col hover:opacity-50 hover:scale-110 duration-1000 cursor-pointer animate-bounce'>
+            <div className='flex items-center justify-center flex-col hover:opacity-50 hover:scale-110 duration-1000 cursor-pointer '>
             <Image src="/images/paid.png" alt="" width={40} height={40} />
             <span className='mt-2'>Payment</span>
             </div>
-            <div className='flex items-center justify-center flex-col hover:opacity-50 hover:scale-110 duration-1000 cursor-pointer'>
+            <div className='flex items-center justify-center flex-col hover:opacity-50 hover:scale-110 duration-1000 cursor-pointer animate-bounce'>
             <Image src="/images/bake.png" alt="" width={40} height={40} />
             <span className='mt-2'>Preparing</span>
             </div>
@@ -55,5 +56,14 @@ const Order = () => {
     
   )
 }
+export const getServerSideProps = async ({params})=>{
 
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/orders/${params.id}`);
+
+    return{
+        props:{
+            order:res.data ? res.data : "aNAN"
+        }
+    }
+}
 export default Order

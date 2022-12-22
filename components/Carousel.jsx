@@ -38,10 +38,8 @@ const Carousel = () => {
             <div>
             <div className='mt-48 left-0 container mx-auto text-white flex flex-col items-start gap-y-10'>
                 <Title addClass="text-6xl">Fast Food Restaurant</Title>
-                <p className='text-sm sm:w-3/6 w-full'>Deneme Deneme Deneme kljfkfklqmklr Deneme Deneme Deneme
-                Deneme Deneme Deneme kljfkfklqmklr Deneme Deneme Deneme
-                Deneme Deneme Deneme kljfkfklqmklr Deneme Deneme Deneme
-                Deneme Deneme Deneme kljfkfklqmklr Deneme Deneme Deneme
+                <p className='text-sm sm:w-3/6 w-full'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi quis, ex optio, beatae sapiente in cupiditate,
+                 quos aliquam animi natus! Tenetur tempora veritatis vel eius et nihil blanditiis nostrum incidunt similique saepe. Illo dicta ipsum quidem exercitationem perspiciatis numquam.
                 </p>
                 
                 <button className='btn-primary'>Order now</button>
@@ -49,8 +47,8 @@ const Carousel = () => {
             </div>
             <div>
             <div className='mt-48 left-0 container mx-auto text-white flex flex-col items-start gap-y-10'>
-                <Title addClass="text-6xl">Fast Food Restaurant</Title>
-                <p className='text-sm sm:w-3/6 w-full'>Bu 2.slider
+                <Title addClass="text-6xl">Fast Food Restaurant Second Section</Title>
+                <p className='text-sm sm:w-3/6 w-full'>Second lorem ipsum dolor sit amet consectetur adipisicing elit. Id adipisci officiis in atque tempora dolore doloribus consequatur architecto quam, at dolorem sequi vitae commodi. Ad, quibusdam totam sed accusantium doloremque debitis illo enim at praesentium incidunt aspernatur harum, repudiandae minus.
                 </p>
                 
                 <button className='btn-primary'>Order now</button>

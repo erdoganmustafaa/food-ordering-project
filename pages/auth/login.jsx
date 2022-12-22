@@ -99,7 +99,7 @@ export async function getServerSideProps({req}){
     
        const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/users`);
        const user = res.data?.find((user)=>user.email===session?.user.email);
-       console.log(user);
+      
         
         // BURADA HATA VAR DÜZELTİLECEK..
         

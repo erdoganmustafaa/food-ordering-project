@@ -42,20 +42,20 @@ const Header = () => {
                 )}
             </nav>
             <div className='flex gap-x-4 items-center'>
-            <Link href='/auth/login'>
+            <a href='/auth/login'>
             <FaUserAlt className='hover:text-primary'/>
-            </Link>
-            <Link href='/cart'>
+            </a>
+            <a href='/cart'>
             <span className='relative'>
             <FaShoppingCart className='hover:text-primary'/>
             <span className='w-4 h-4 text-xs text-black grid place-content-center absolute -top-2 -right-3 font-bold  rounded-full bg-primary'>{cart.products.length}</span>
             </span>
-            </Link>
+            </a>
             
             <button onClick={()=>setIsSearchModal(true)}><FaSearch className='hover:text-primary'/></button>
-            <Link href='#' className='md:inline-block hidden'>
+            <a href='#' className='md:inline-block hidden'>
                 <button className='btn-primary hover:text-red-900 hover:bg-white'>Order Online</button>
-            </Link>
+            </a>
             <button className='sm:hidden inline-block' onClick={()=>setIsMenuModal(true)}>
             <GiHamburgerMenu className='text-2xl hover:text-primary'/>
             </button>

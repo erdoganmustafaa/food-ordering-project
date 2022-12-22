@@ -10,6 +10,14 @@ import store from "../redux/store";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
+import Router from "next/router";
+import nProgress from "nprogress";
+import "nprogress/nprogress.css"
+
+Router.events.on("routeChangeStart",()=>nProgress.start())
+Router.events.on("routeChangeComplete",()=>nProgress.done())
+Router.events.on("routeChangeError",()=>nProgress.done())
+
 function MyApp({ Component, pageProps:{session,...pageProps} }) {
   return (
   <SessionProvider session={session}>
