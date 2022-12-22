@@ -5,26 +5,26 @@
 Live : https://food-orderingg.vercel.app/
 
 Kullandığım Teknolojiler:
--NextJS 
--Tailwind CSS
--MongoDB
+-NextJS <br/>
+-Tailwind CSS<br/>
+-MongoDB<br/>
 
-Kullandığım Kütüphaneler:
--axios
--bcryptjs
--cookie
--formik
--mongodb
--mongoose
--nprogress
--react-dom
--react-icons
--react-outside-click-handler
--react-redux
--react-router-dom
--react-slick
--react-toastify
--slick-carousel
--yupp
+Kullandığım Kütüphaneler:<br/>
+-axios<br/>
+-bcryptjs<br/>
+-cookie<br/>
+-formik<br/>
+-mongodb<br/>
+-mongoose<br/>
+-nprogress<br/>
+-react-dom<br/>
+-react-icons<br/>
+-react-outside-click-handler<br/>
+-react-redux<br/>
+-react-router-dom<br/>
+-react-slick<br/>
+-react-toastify<br/>
+-slick-carousel<br/>
+-yup
 
 
