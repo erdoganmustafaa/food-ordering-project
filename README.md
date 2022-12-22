@@ -25,6 +25,6 @@ Kullandığım Kütüphaneler:
 -react-slick
 -react-toastify
 -slick-carousel
--yup
+-yupp
 
 
