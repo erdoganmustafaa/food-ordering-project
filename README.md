@@ -4,7 +4,7 @@
 
 Live : https://food-orderingg.vercel.app/
 
-Kullandığım Teknolojiler:
+Kullandığım Teknolojiler:<br/>
 -NextJS <br/>
 -Tailwind CSS<br/>
 -MongoDB<br/>
