@@ -58,22 +58,22 @@ const Index = ({food}) => {
 
 
     return (
-        <div className='sm:flex flex-col justify-center items-center h-screen gap-8 py-28'>
-            <div className='relative md:flex-1 md:w-[100%] md:h-[100%] w-24 h-24 mx-auto cursor-pointer'>
+        <div className='sm:flex flex-col justify-center items-center h-screen gap-8 py-28 text-center'>
+            <div className='relative md:flex-1 md:w-[100%] md:h-[100%] w-24 h-24  cursor-pointer'>
                 <Image src={food?.img} alt="" layout='fill' objectFit='contain'  />
             </div>
-            <div className='sm:mt-10 mt-20'>
+            <div className='sm:mt-10 mt-20 mx-auto'>
                 <Title addClass="text-center text-6xl sm:-mt-0 -mt-10">{food?.title}</Title>
                 
-                <span className='text-red-700 text-2xl font-bold underline my-4 sm:mx-0 ml-40 inline-block'>
+                <span className='text-red-700 text-2xl font-bold underline my-4 sm:mx-auto ml-40 inline-block '>
                     $ {price}
                 </span>
-                <p className='text-[20px] my-4 sm:w-2/3 w-full sm:ml-0 ml-5 '>{food?.description}</p>
+                <p className='text-[18px] my-4 w-[1000px] sm:ml-0 ml-5 '>{food?.description}</p>
                 {
                     food.category==="pizza" && 
                     <div>
                     <h3 className='text-[16px] font-bold sm:ml-0 ml-4'>Choose the Pizza size</h3>
-                    <div className='flex items-center sm:gap-16 gap-12 sm:ml-0 ml-3 cursor-pointer'>
+                    <div className='flex items-center sm:gap-16 gap-12 sm:ml-0 ml-3 cursor-pointer justify-center'>
                         <div className='relative w-8 h-8 active:bg-red-600' onClick={()=>{changePrice(0);setClicked(false);}}>
                         <Image src="/images/size.png" alt="" layout='fill' />
                         <span className='absolute -top-2 -right-4 text-[12px] bg-primary rounded-md font-medium px-[5px]'>Small</span>
