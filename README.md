@@ -4,12 +4,12 @@
 
 Live : https://food-orderingg.vercel.app/
 
-Kullandığım Teknolojiler:<br/>
+<b>Kullandığım Teknolojiler:</b><br/>
 -NextJS <br/>
 -Tailwind CSS<br/>
 -MongoDB<br/>
 
-Kullandığım Kütüphaneler:<br/>
+<b>Kullandığım Kütüphaneler:</b><br/>
 -axios<br/>
 -bcryptjs<br/>
 -cookie<br/>
