@@ -6,8 +6,8 @@
 <b>Admin Paneli için sitenin sonuna /admin yazarak admin paneline erişebilirsiniz.</b><br/><br/>
 <b>Admin Paneli Giriş Bilgileri:</b><br/>
 <b>Kullanıcı adı :</b>admin </br>
-<b>Şifre : </b> 123456<br/>
-<b>Kullandığım Teknolojiler:</b><br/><br/><br/>
+<b>Şifre : </b> 123456<br/><br/><br/>
+<b>Kullandığım Teknolojiler:</b><br/>
 -NextJS <br/>
 -Tailwind CSS<br/>
 -MongoDB<br/>
