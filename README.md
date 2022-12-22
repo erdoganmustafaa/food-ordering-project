@@ -2,7 +2,7 @@
 
 ## Full Stack Food Ordering Project
 
-Live : https://food-orderingg.vercel.app/
+<b>Live : https://food-orderingg.vercel.app/</b>
 
 <b>Kullandığım Teknolojiler:</b><br/>
 -NextJS <br/>
