@@ -7,7 +7,7 @@
 <b>Admin Paneli Giriş Bilgileri:</b><br/>
 <b>Kullanıcı adı :</b>admin </br>
 <b>Şifre : </b> 123456<br/>
-<b>Kullandığım Teknolojiler:</b><br/>
+<b>Kullandığım Teknolojiler:</b><br/><br/><br/>
 -NextJS <br/>
 -Tailwind CSS<br/>
 -MongoDB<br/>
